@@ -6,23 +6,78 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Fav-Icon -->
   <link rel="shortcut icon"
     href="https://raw.githubusercontent.com/johnuberbacher/invoice-generator/master/public/favicon.ico"
     type="image/x-icon" />
 
+  <!-- Title -->
   <title>Invoice Generator - Plain JavaScript App</title>
 
+  <!-- Font-Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="./styles/normalize.css" />
 
   <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body>
+  <div class="container">
 
+    <!-- CONTAINER 1 -->
+    <div class="conatiner-1">
+      <!-- Date & Invoice Container -->
+      <div class="date-and-invoice">
+        <div class="date-calender"></div>
+        <div class="invoice-count"></div>
+      </div>
+      <!-- Billing Container -->
+      <div class="billing-address">
+        <div class="bill-to"></div>
+        <div class="bill-from"></div>
+      </div>
+      <!-- Order Details -->
+      <div class="item-detail">
+        <div class="item-name-description"></div>
+        <div class="item-qty"></div>
+        <div class="item-price"></div>
+        <div class="item-action"></div>
+      </div>
+      <!-- Add item -->
+      <div class="add-item">
+        <button class="btn btn-add-item"></button>
+      </div>
+      <!-- price-calculation -->
+      <div class="calculation-container">
+        <div class="price-calculation">
+          <div class="subtotal"></div>
+          <div class="discount"></div>
+          <div class="tax"></div>
+          <div class="total"></div>
+        </div>
+      </div>
+      <!-- Notes -->
+      <div class="notes"></div>
+    </div>
+
+    <!-- CONTAINER 2 -->
+    <div class="conatiner-2">
+      <!-- Review -->
+      <div class="review">
+        <div class="invoice"></div>
+      </div>
+      <!-- Price/Rate calc -->
+      <div class="rate-calc">
+        <div class="currency"></div>
+        <div class="tax-rate"></div>
+        <div class="discount-rate"></div>
+      </div>
+    </div>
+  </div>
 
   <script src="./scripts/script.js"></script>
 </body>
