@@ -38,6 +38,14 @@ li {
   list-style: none;
 }
 
+h5 {
+  font-weight: 600;
+}
+
+span {
+  font-weight: 100;
+}
+
 .btn {
   display: inline-block;
   border-radius: 4px;
@@ -51,6 +59,13 @@ li {
   background-color: var(--btn);
   color: white;
   border: 2px solid var(--btn);
+}
+
+/* Custom CSS */
+.container-1 {
+  width: 70vw;
+  height: auto;
+  background-color: var(--white);
 }
 
 @media screen and (min-width: 576px) {}
