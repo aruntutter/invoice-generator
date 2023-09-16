@@ -9,6 +9,15 @@
   outline: none;
 }
 
+:root {
+  --btn: #0D6EFD;
+  --danger: #DC3545;
+  --input: #F5F7F9;
+  --bg: #F2F3F7;
+  --white: #fff;
+  --black: #000;
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -16,7 +25,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #fff;
+  background-color: var(--bg);
 }
 
 /* global css */
@@ -31,7 +40,7 @@ li {
 
 .btn {
   display: inline-block;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 0.5rem 1.5rem;
   margin-top: 0.5rem;
   text-transform: capitalize;
@@ -39,9 +48,9 @@ li {
   font-weight: 500;
   cursor: pointer;
   /* customize */
-  background-color: #1c2042;
+  background-color: var(--btn);
   color: white;
-  border: 2px solid #1c2042;
+  border: 2px solid var(--btn);
 }
 
 @media screen and (min-width: 576px) {}
