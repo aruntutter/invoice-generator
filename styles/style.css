@@ -164,6 +164,18 @@ input {
 /* Order Details */
 .item-detail {
   width: 90%;
+}
+
+.item-detail-box {
+  padding: 25px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  border-bottom: 1px solid lightgray;
+}
+
+.container-item {
   padding: 25px 0px 10px;
   display: flex;
   flex-direction: row;
@@ -214,6 +226,8 @@ input {
 .item-price>input {
   padding: 8px 8px;
   width: 90px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .item-price>span {
