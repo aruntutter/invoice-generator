@@ -29,54 +29,134 @@
   <div class="container">
 
     <!-- CONTAINER 1 -->
-    <div class="conatiner-1">
+    <div class="container-1">
       <!-- Date & Invoice Container -->
       <div class="date-and-invoice">
-        <div class="date-calender"></div>
-        <div class="invoice-count"></div>
+        <div class="date-calender">
+          <h5>Current Date: <span>9/16/2023</span></h5>
+          <h5>Due Date: <input type="date"></h5>
+        </div>
+        <div class="invoice-count">
+          <h5>Invoice Number: <input type="number"></h5>
+        </div>
       </div>
       <!-- Billing Container -->
       <div class="billing-address">
-        <div class="bill-to"></div>
-        <div class="bill-from"></div>
+        <div class="bill-to">
+          <h5>Bill to:</h5>
+          <input type="text" placeholder="Who is this invoice to?">
+          <input type="text" placeholder="Email address">
+          <input type="text" placeholder="Billing address">
+        </div>
+        <div class="bill-from">
+          <h5>Bill from:</h5>
+          <input type="text" placeholder="Who is this invoice from?">
+          <input type="text" placeholder="Email address">
+          <input type="text" placeholder="Billing address">
+        </div>
       </div>
       <!-- Order Details -->
+      <div class="item-detail-name">
+        <div class="item-name-description">
+          <h5>ITEM</h5>
+        </div>
+        <div class="item-qty">
+          <h5>QTY</h5>
+        </div>
+        <div class="item-price">
+          <h5>PRICE/RATE</h5>
+        </div>
+        <div class="item-action">
+          <h5>ACTION</h5>
+        </div>
+      </div>
+      <!-- Order Details Input -->
       <div class="item-detail">
-        <div class="item-name-description"></div>
-        <div class="item-qty"></div>
-        <div class="item-price"></div>
-        <div class="item-action"></div>
+        <div class="item-name-description">
+          <input type="text" placeholder="Item name">
+          <input type="text" placeholder="Item description">
+        </div>
+        <div class="item-qty">
+          <input type="number">
+        </div>
+        <div class="item-price">
+          <span>$</span>
+          <input type="number">
+        </div>
+        <div class="item-action">
+          <button type="submit"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
       </div>
       <!-- Add item -->
-      <div class="add-item">
-        <button class="btn btn-add-item"></button>
+      <div class="add-item-calc">
+        <button class="btn btn-add-item">Add Item</button>
       </div>
       <!-- price-calculation -->
       <div class="calculation-container">
         <div class="price-calculation">
-          <div class="subtotal"></div>
-          <div class="discount"></div>
-          <div class="tax"></div>
-          <div class="total"></div>
+          <div class="total-calc subtotal">
+            <h5>Subtotal:</h5>
+            <span>$1.00</span>
+          </div>
+          <div class="total-calc discount">
+            <h5>Discount:</h5>
+            <span>(0%)$0.00</span>
+          </div>
+          <div class="total-calc tax">
+            <h5>Tax:</h5>
+            <span>(0%)$0.00</span>
+          </div>
+          <div class="total-calc total">
+            <h5>Total:</h5>
+            <h5>$1</h5>
+          </div>
         </div>
       </div>
       <!-- Notes -->
-      <div class="notes"></div>
+      <div class="notes">
+        <h5>Notes</h5>
+        <input type="text" placeholder="Thanks for your business!">
+      </div>
     </div>
 
     <!-- CONTAINER 2 -->
-    <div class="conatiner-2">
+    <div class="container-2">
       <!-- Review -->
       <div class="review">
-        <div class="invoice"></div>
+        <div class="invoice">
+          <button>Review Invoice</button>
+        </div>
       </div>
       <!-- Price/Rate calc -->
       <div class="rate-calc">
-        <div class="currency"></div>
-        <div class="tax-rate"></div>
-        <div class="discount-rate"></div>
+        <div class="currency rate">
+          <h5>Currency:</h5>
+          <select id="currency" name="currency">
+            <option value="usd">USD (United States Dollar)</option>
+            <option value="gbp">GBP (British Pound Sterling)</option>
+            <option value="jpy">JPY (Japanese Yen)</option>
+            <option value="cad">CAD (Canadian Dollar)</option>
+            <option value="aud">AUD (Australian Dollar)</option>
+            <option value="sgd">SGD (Signapore Dollar)</option>
+            <option value="cny">CNY (Chinese Renminbi)</option>
+            <option value="btc">BTC (Bitcoin)</option>
+          </select>
+        </div>
+        <div class="tax rate">
+          <h5>Tax rate:</h5>
+          <div class="rate-input">
+            <input type="number" placeholder="0.0"><span>%</span>
+          </div>
+        </div>
+        <div class="discount rate">
+          <h5>Discount rate:</h5>
+          <div class="rate-input">
+            <input type="number" placeholder="0.0"><span>%</span>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
 
   <script src="./scripts/script.js"></script>
