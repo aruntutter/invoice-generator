@@ -33,7 +33,7 @@
       <!-- Date & Invoice Container -->
       <div class="date-and-invoice">
         <div class="date-calender">
-          <h5>Current Date: <span>9/16/2023</span></h5>
+          <h5>Current Date: <span>dd/mm/yyyy</span></h5>
           <h5>Due Date: <input type="date"></h5>
         </div>
         <div class="invoice-count">
@@ -72,24 +72,27 @@
       </div>
       <!-- Order Details Input -->
       <div class="item-detail">
-        <div class="item-name-description">
-          <input type="text" placeholder="Item name">
-          <input type="text" placeholder="Item description">
+        <div class="item-detail-box">
+          <div class="item-name-description">
+            <input type="text" placeholder="Item name">
+            <input type="text" placeholder="Item description">
+          </div>
+          <div class="item-qty">
+            <input type="number">
+          </div>
+          <div class="item-price">
+            <span>$</span>
+            <input type="number">
+          </div>
+          <div class="item-action">
+            <button type="button" class="btn-delete"><i class="fa-regular fa-trash-can"></i></button>
+          </div>
         </div>
-        <div class="item-qty">
-          <input type="number">
-        </div>
-        <div class="item-price">
-          <span>$</span>
-          <input type="number">
-        </div>
-        <div class="item-action">
-          <button type="submit"><i class="fa-regular fa-trash-can"></i></button>
-        </div>
+        <div class="items-container"></div>
       </div>
       <!-- Add item -->
       <div class="add-item-calc">
-        <button class="btn btn-add-item">Add Item</button>
+        <button type="button" class="btn btn-add-item">Add Item</button>
       </div>
       <!-- price-calculation -->
       <div class="calculation-container">
@@ -108,7 +111,7 @@
           </div>
           <div class="total-calc total">
             <h5>Total:</h5>
-            <h5>$1</h5>
+            <h5 id="total-amount">$1</h5>
           </div>
         </div>
       </div>
